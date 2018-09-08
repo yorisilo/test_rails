@@ -71,3 +71,8 @@ gem install hirb-unicode
 => {1=>15, 2=>13, 3=>45, 4=>14}
 [36] pry(main)>
 ```
+
+# time zone を UTC から JST にする
+`config/application.rb` に `config.time_zone = 'Asia/Tokyo'` って書く
+
+* [Ruby on Railsのtimezoneをtokyoに変更し、ついでにいい感じに時刻をビューに出力する - geekday’s diary](http://geekday.hatenablog.com/entry/2017/04/27/015440)
