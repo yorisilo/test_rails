@@ -76,3 +76,10 @@ gem install hirb-unicode
 `config/application.rb` に `config.time_zone = 'Asia/Tokyo'` って書く
 
 * [Ruby on Railsのtimezoneをtokyoに変更し、ついでにいい感じに時刻をビューに出力する - geekday’s diary](http://geekday.hatenablog.com/entry/2017/04/27/015440)
+
+# has_one ? belongs_to?
+* [has_one と belongs_to、どっちがどっち ? - 似非プログラマの覚え書き](http://d.hatena.ne.jp/redcat_prog/20130615/1371263591)
+
+> ただし、例のアプリでは District の側から City を参照することがないので、City にだけ belongs_to を付けている。このように一方向の関係である場合は has_one or has_many と belongs_to を必ずしもセットにしなくても良い。
+
+あるmodel Aからは参照しないと思ったら、リレーションの関係は一方方向で良い。
